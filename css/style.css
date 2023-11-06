@@ -1,0 +1,324 @@
+/***** Nueva Paleta de Colores *****/
+/***********************************/
+a {
+  color: var(--principal-color);
+}
+
+a:hover {
+  color: var(--secundario-color);
+}
+
+.text-primary {
+  color: var(--principal-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--principal-color);
+  border-color: var(--principal-color);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var(--secundario-color) !important;
+  border-color: var(--secundario-color) !important;
+  color: white;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5) !important;
+}
+
+::-moz-selection {
+  background: var(--principal-color);
+}
+
+::selection {
+  background: var(--principal-color);
+}
+
+#mainNav .navbar-toggler {
+  background-color: var(--principal-color);
+}
+
+#mainNav .navbar-brand {
+  color: var(--principal-color);
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: var(--secundario-color);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--principal-color);
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: var(--principal-color-a);
+}
+
+.timeline > li .timeline-image {
+  border: 7px solid #e9ecef;
+  background-color: var(--principal-color);
+}
+
+section#contact .form-control {
+  border-color: var(--principal-color);
+}
+
+section#contact .form-control:focus {
+  border-color: var(--secundario-color);
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+  background-color: var(--principal-color);
+}
+
+/***** LEER MAS *****/
+/* documentación: https://codepen.io/Idered/pen/AeBgF */
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+
+/*****  HEADER  *****/
+/********************/
+#mainNav{
+  padding-top: 0;
+}
+
+.navbar .menu-logo{
+  margin: 1.2em 0em 0em 0em;
+  padding: 0em;
+}
+
+.navbar .menu-logo li{
+  list-style: none;
+}
+
+.navbar ul li p{
+  color: white;
+  line-height: 1em;
+  font-size: 0.9em;
+}
+
+header.masthead {
+  background-image: url("../img/header-bg.jpg");
+}
+
+.intro-lead-in{
+	background-color: rgba(30,30,30,.5);
+	padding: .3em;
+}
+
+header.masthead .intro-text {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px){
+	header.masthead .intro-text {
+  	padding-top: 550px;
+  	padding-bottom: 200px;
+	}
+}
+
+
+/*****  SECTIONS  *****/
+/**********************/
+section h2.section-heading {
+  margin-bottom: 75px;
+}
+
+section#contact {
+  background-image: url(../img/map-image.jpg);
+  padding: 100px 0;
+}
+
+
+/*****   BIO   *****/
+/*******************/
+.timeline>li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: #fff;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: var(--principal-color);
+}
+
+
+.timeline>li .timeline-image:last-child {
+    width: 116px;
+    height: 116px;
+    margin-left: -58px;
+}
+
+.timeline-image a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*****   CONTACTO   *****/
+/************************/
+section#contact ::-webkit-input-placeholder {
+  color: #606469;
+}
+
+section#contact :-moz-placeholder {
+  color: #606469;
+}
+
+section#contact ::-moz-placeholder {
+  color: #606469;
+}
+
+.text-danger{
+  /*background-color: #E82336;*/
+  background-color: rgba(232,5,27,0.8);
+  border-radius: .25rem;
+}
+.text-danger ul li{
+  color: white;
+  list-style: none;
+}
+
+
+/*****   MODALS   *****/
+/**********************/
+#cvModal .modal-content{
+    text-align: left;
+    color: #000;
+}
+
+#cv-header{
+    margin-bottom: 1em;
+}
+
+#cv-text-dp{
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+    color: var(--principal-color);
+    font-size: 4.2em;
+}
+
+#cvModal ul li{
+    list-style: none;
+}
+
+.portfolio-modal .modal-content p.cv-text-1,
+.portfolio-modal .modal-content p.cv-text-2 {
+    text-align: justify;
+}
+
+.portfolio-modal .modal-content p.cv-text-1 {
+    color: #606469;
+    margin-bottom: 0px;
+}
+
+.portfolio-modal .modal-content p.cv-text-2 {
+
+}
+
+#cv-link-pdf{
+    margin-bottom: 1em;
+}
+
+
+
+/*****   MEDIA QUERY   *****/
+/***************************/
+@media (min-width: 768px){
+  .timeline > li .timeline-panel {
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+	.timeline>li .timeline-image {
+  	left: 50%;
+  	width: 100px;
+  	height: 100px;
+  	margin-left: -50px;
+	}
+}
+
+@media (min-width: 992px) {
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline>li .timeline-image {
+  	width: 150px;
+  	height: 150px;
+  	margin-left: -75px;
+	}
+
+  #mainNav .navbar-brand {
+    font-size: 2.5em;
+  }
+
+  #mainNav.navbar-shrink {
+    background-color: #121117;
+  }
+
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+
+  #mainNav.navbar-shrink .menu-logo{
+    margin-top: 0;
+  }
+
+  #mainNav.navbar-shrink .menu-logo p{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1200px){
+	.timeline > li {
+    min-height: 70px;
+  }
+  .timeline>li .timeline-image {
+  	width: 70px;
+  	height: 70px;
+  	margin-left: -35px;
+	}
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
